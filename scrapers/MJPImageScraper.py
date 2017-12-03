@@ -63,7 +63,7 @@ def download_image(output_path, image_title, image_detail_websites):
 
 if __name__ == '__main__':
     page_number = input('enter page: ')
-    url = ''
+    url = 'http://www.mmjpg.com/home/'
     file_path = ''
     for link in get_page_number(url, page_number):
         download_image(file_path, get_image_title(link), get_image_detail_website(link))
